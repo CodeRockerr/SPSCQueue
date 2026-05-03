@@ -27,7 +27,7 @@ static int g_pass = 0, g_fail = 0;
     try { test_##name(); say("    -> PASS"); ++g_pass; } \
     catch(const std::exception& e){ sayf("    -> FAIL: %s\n",e.what()); ++g_fail; } \
 } while(0)
-#define EXPECT(c) do { if(!(c)) throw std::runtime_error("EXPECT(" #c ") line " + std::to_string(__LINE__)); } while(0)
+#define EXPECT(c) do { if(!(c)) throw std::runtime_error(std::string("EXPECT(") + #c + ") line " + std::to_string(__LINE__)); } while(0)
 
 
 // ── Basic correctness ─────────────────────────────────────────────────────────
