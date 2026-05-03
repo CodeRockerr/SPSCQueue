@@ -1,0 +1,29 @@
+# Build output
+/build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# Binaries
+/build/tests
+/build/bench
+*.o
+*.obj
+*.out
+
+# Editor/IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~
+
+# Archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Logs and caches
+*.log
+__pycache__/
+*.pyc
